@@ -14,6 +14,7 @@ const Hero = () => {
 
                 display: "flex",
                 flexDirection: "column",
+                overflow: "hidden",
             }}
         >
             <Container>
@@ -35,7 +36,11 @@ const Hero = () => {
                     </Grid>
                 </Grid>
             </Container>
-            <img src={heroImage} alt="skyline" />
+            <img
+                src={heroImage}
+                alt="skyline"
+                style={{ transform: "scale(1.001)" }}
+            />
         </Box>
     );
 };

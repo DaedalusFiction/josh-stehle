@@ -85,6 +85,7 @@ primary = createTheme(primary, {
             fontWeight: "bold",
         },
         h6: {
+            color: primary.palette.text.secondary,
             fontWeight: "bold",
         },
         subtitle1: {

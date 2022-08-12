@@ -57,7 +57,12 @@ const Header = () => {
                                     mr: 1,
                                 }}
                             >
-                                <Typography variant="h5">JS</Typography>
+                                <Typography
+                                    variant="h5"
+                                    sx={{ fontSize: "2.5rem" }}
+                                >
+                                    JS
+                                </Typography>
                             </Box>
                         </Link>
                         <Box
@@ -154,6 +159,7 @@ const Header = () => {
                                     }}
                                 >
                                     <Typography
+                                        variant="h6"
                                         //separate styling because can't get NavLink working with hover
                                         sx={{
                                             textTransform: "uppercase",
