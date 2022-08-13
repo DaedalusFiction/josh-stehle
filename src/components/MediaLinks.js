@@ -11,18 +11,18 @@ const links = [
     {
         name: "facebook",
         href: "https://facebook.com/thestehle.bros",
-        icon: <SiFacebook size={60} />,
+        icon: <SiFacebook />,
     },
 
     {
         name: "tiktok",
         href: "https://tiktok.com@thestehle.bros",
-        icon: <SiTiktok size={60} />,
+        icon: <SiTiktok />,
     },
     {
         name: "instagram",
         href: "https://instagram.com/joshstehle",
-        icon: <SiInstagram size={60} />,
+        icon: <SiInstagram />,
     },
 ];
 
@@ -36,12 +36,12 @@ const MediaLinks = () => {
                 >
                     Follow us on Social Media!
                 </Typography>
-                <br />
                 <Box
                     sx={{
                         padding: "1em",
-                        // backgroundColor: primary.palette.primary.main,
-                        borderRadius: "5px",
+                        border: "2px solid black",
+                        // borderColor: primary.palette.primary.main,
+                        borderRadius: "10px",
                     }}
                 >
                     <Box
@@ -54,19 +54,24 @@ const MediaLinks = () => {
                             value={{
                                 color: primary.palette.secondary.main,
                                 className: "global-class-name",
+                                size: "3.5em",
                             }}
                         >
                             {links.map((link) => {
                                 return (
-                                    <div key={link.name}>
+                                    <Box key={link.name}>
                                         <IconButton href={link.href}>
                                             {link.icon}
                                         </IconButton>
-                                    </div>
+                                    </Box>
                                 );
                             })}
                         </IconContext.Provider>
                     </Box>
+                    <br />
+                    <Typography sx={{ color: "white", textAlign: "center" }}>
+                        Now with more than 20 million views!
+                    </Typography>
                 </Box>
             </Container>
         </Box>
