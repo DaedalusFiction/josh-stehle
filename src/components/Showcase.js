@@ -29,7 +29,11 @@ const Showcase = () => {
                             </Typography>
                             <br />
                             <Link to="/about">
-                                <Button variant="contained" color="secondary">
+                                <Button
+                                    size="large"
+                                    variant="contained"
+                                    color="secondary"
+                                >
                                     Learn More!
                                 </Button>
                             </Link>

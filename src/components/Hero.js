@@ -36,11 +36,13 @@ const Hero = () => {
                     </Grid>
                 </Grid>
             </Container>
-            <img
-                src={heroImage}
-                alt="skyline"
-                style={{ transform: "scale(1.001)" }}
-            />
+            <Box>
+                <img
+                    src={heroImage}
+                    alt="skyline"
+                    style={{ transform: "scale(1.001)" }}
+                />
+            </Box>
         </Box>
     );
 };

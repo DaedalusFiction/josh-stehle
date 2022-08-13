@@ -28,7 +28,13 @@ const links = [
 
 const MediaLinks = () => {
     return (
-        <Box sx={{ backgroundColor: "black", padding: "0 0 4rem 0" }}>
+        <Box
+            sx={{
+                backgroundColor: "black",
+                padding: "2rem 0 8rem 0",
+                transform: "translateY(-2px)",
+            }}
+        >
             <Container maxWidth="sm">
                 <Typography
                     variant="h2"
@@ -59,7 +65,21 @@ const MediaLinks = () => {
                         >
                             {links.map((link) => {
                                 return (
-                                    <Box key={link.name}>
+                                    <Box
+                                        key={link.name}
+                                        sx={{
+                                            borderRadius: "100%",
+                                            "&:hover": {
+                                                backgroundColor:
+                                                    primary.palette.primary
+                                                        .main,
+                                                boxShadow:
+                                                    "0px 0px 15px 15px " +
+                                                    primary.palette.primary
+                                                        .main,
+                                            },
+                                        }}
+                                    >
                                         <IconButton href={link.href}>
                                             {link.icon}
                                         </IconButton>
