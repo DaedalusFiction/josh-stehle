@@ -54,7 +54,7 @@ const MediaLinks = () => {
                             value={{
                                 color: primary.palette.secondary.main,
                                 className: "global-class-name",
-                                size: "3.5em",
+                                size: "3.25em",
                             }}
                         >
                             {links.map((link) => {
