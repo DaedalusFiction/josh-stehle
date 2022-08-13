@@ -42,7 +42,10 @@ const EmailForm = () => {
             sx={{ backgroundColor: primary.palette.primary.main }}
         >
             <Container>
-                <Box className="flex-center" sx={{ gap: "4em" }}>
+                <Box
+                    className="flex-center"
+                    sx={{ gap: "4em", flexWrap: "wrap" }}
+                >
                     <Box>
                         <Typography
                             variant="h1"

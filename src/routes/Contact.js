@@ -1,12 +1,15 @@
 import { Box, Typography } from "@mui/material";
 import ContactSection from "../components/ContactSection";
+import { primary } from "../themes/primary";
 
 const Contact = () => {
     return (
-        <Box sx={{ padding: "8rem 0" }}>
-            <Typography variant="h2" component="h4">
-                Assemble!
-            </Typography>
+        <Box
+            sx={{
+                backgroundColor: primary.palette.primary.main,
+                padding: "8rem 0",
+            }}
+        >
             <ContactSection />
         </Box>
     );

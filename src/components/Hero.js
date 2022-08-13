@@ -2,24 +2,20 @@ import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import heroImage from "../assets/images/heroImage2.png";
+import bookCover from "../assets/images/bookCover.PNG";
 
 const Hero = () => {
     return (
         <Box
             sx={{
-                // backgroundImage: `url(${earth})`,
                 background: "#ffb71d",
-                // background:
-                //     "linear-gradient(0deg, rgba(232,166,26,1) 46%, rgba(255,210,115,1) 100%)",
-
-                display: "flex",
-                flexDirection: "column",
+                padding: "8rem 0 0 0",
                 overflow: "hidden",
             }}
         >
             <Container>
-                <Grid container sx={{ margin: "8rem 0" }}>
-                    <Grid item xs={12} md={5}>
+                <Grid container spacing={4}>
+                    <Grid item xs={12} md={6}>
                         <Typography variant="h1">
                             Josh Stehle: Superhero Expert
                         </Typography>
@@ -34,9 +30,14 @@ const Hero = () => {
                             Preorder now!
                         </Button>
                     </Grid>
+                    <Grid item xs={12} md={6}>
+                        <Box>
+                            <img src={bookCover} alt="Book Cover" />
+                        </Box>
+                    </Grid>
                 </Grid>
             </Container>
-            <Box>
+            <Box sx={{ marginTop: "8rem" }}>
                 <img
                     src={heroImage}
                     alt="skyline"

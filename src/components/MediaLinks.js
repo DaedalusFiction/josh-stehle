@@ -16,7 +16,7 @@ const links = [
 
     {
         name: "tiktok",
-        href: "https://tiktok.com@thestehle.bros",
+        href: "https://tiktok.com/@thestehle.bros",
         icon: <SiTiktok />,
     },
     {

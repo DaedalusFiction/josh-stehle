@@ -2,6 +2,7 @@ import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import brothersImage from "../assets/images/brothersImage.png";
 import { Link } from "react-router-dom";
+import { navigateToTop } from "../utils/utils";
 
 const Showcase = () => {
     return (
@@ -28,7 +29,7 @@ const Showcase = () => {
                                 obcaecati iure?
                             </Typography>
                             <br />
-                            <Link to="/about">
+                            <Link to="/about" onClick={navigateToTop}>
                                 <Button
                                     size="large"
                                     variant="contained"
