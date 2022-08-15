@@ -5,9 +5,9 @@ import React from "react";
 import { primary } from "../themes/primary";
 
 const socialMedia = [
-    { media: "tiktok", url: "https://tiktok.com/@thestehle.bros" },
-    { media: "instagram", url: "https://instagram.com/joshstehle" },
-    { media: "facebook", url: "https://facebook.com/thestehle.bros" },
+    { media: "TikTok", url: "https://tiktok.com/@thestehle.bros" },
+    { media: "Instagram", url: "https://instagram.com/joshstehle" },
+    { media: "Facebook", url: "https://facebook.com/thestehle.bros" },
 ];
 
 const contactInfo = [{ type: "email", value: "hello@email.com" }];

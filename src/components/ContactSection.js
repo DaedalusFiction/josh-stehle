@@ -69,7 +69,7 @@ const EmailForm = () => {
                         }}
                     >
                         <Typography className="text-center">
-                            Join our mailing list to get all the latest issues
+                            Join our newsletter to get all the latest issues
                             straight to your inbox!
                         </Typography>
                         <Box
@@ -111,8 +111,11 @@ const EmailForm = () => {
                             )}
                         </Box>
                         {emailSent && (
-                            <Typography variant="p">
-                                Thanks! I'll be in touch soon!
+                            <Typography
+                                variant="p"
+                                sx={{ textAlign: "center" }}
+                            >
+                                Thanks for signing up!
                             </Typography>
                         )}
                     </Box>

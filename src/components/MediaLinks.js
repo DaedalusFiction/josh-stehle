@@ -1,4 +1,4 @@
-import { Box, Icon, IconButton, Typography } from "@mui/material";
+import { Box, Icon, IconButton, Tooltip, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import { IconContext } from "react-icons";
 import { SiTiktok } from "react-icons/si";
@@ -9,18 +9,18 @@ import { primary } from "../themes/primary";
 
 const links = [
     {
-        name: "facebook",
+        name: "Facebook",
         href: "https://facebook.com/thestehle.bros",
         icon: <SiFacebook />,
     },
 
     {
-        name: "tiktok",
+        name: "TikTok",
         href: "https://tiktok.com/@thestehle.bros",
         icon: <SiTiktok />,
     },
     {
-        name: "instagram",
+        name: "Instagram",
         href: "https://instagram.com/joshstehle",
         icon: <SiInstagram />,
     },
@@ -40,7 +40,7 @@ const MediaLinks = () => {
                     variant="h2"
                     sx={{ textAlign: "center", color: "white" }}
                 >
-                    Follow us on Social Media!
+                    Follow on Social Media!
                 </Typography>
                 <Box
                     sx={{
@@ -80,9 +80,11 @@ const MediaLinks = () => {
                                             },
                                         }}
                                     >
-                                        <IconButton href={link.href}>
-                                            {link.icon}
-                                        </IconButton>
+                                        <Tooltip title={link.name} followCursor>
+                                            <IconButton href={link.href}>
+                                                {link.icon}
+                                            </IconButton>
+                                        </Tooltip>
                                     </Box>
                                 );
                             })}
@@ -90,7 +92,7 @@ const MediaLinks = () => {
                     </Box>
                     <br />
                     <Typography sx={{ color: "white", textAlign: "center" }}>
-                        Now with more than 20 million views!
+                        And join our newsletter below!
                     </Typography>
                 </Box>
             </Container>
