@@ -13,7 +13,17 @@ const About = () => {
                 <Box sx={{ padding: "4rem 0" }}>
                     <Grid container spacing={6}>
                         <Grid item xs={12} md={6}>
-                            <img src={brothersImage} alt="" />
+                            <Box
+                                sx={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    height: "100%",
+                                    width: "100%",
+                                }}
+                            >
+                                <img src={brothersImage} alt="" />
+                            </Box>
                         </Grid>
                         <Grid item xs={12} md={6}>
                             <Box
@@ -40,15 +50,15 @@ const About = () => {
                                     Zach is also on the autistic spectrum.
                                 </Typography>
                                 <Typography>
-                                    I am a Superhero Expert is a look at autism
-                                    from a new perspective. It describes the
-                                    unique experience of growing up with an
-                                    autistic older brother, while providing a
-                                    glimpse into the challenges that autistic
-                                    people often face and highlighting the
-                                    indescribable beauty that autism can bring
-                                    to siblings through the shared experience of
-                                    two brothers.
+                                    <em>I am a Superhero Expert</em> is a look
+                                    at autism from a new perspective. It
+                                    describes the unique experience of growing
+                                    up with an autistic older brother, while
+                                    providing a glimpse into the challenges that
+                                    autistic people often face and highlighting
+                                    the indescribable beauty that autism can
+                                    bring to siblings through the shared
+                                    experience of two brothers.
                                 </Typography>
                                 <Typography>
                                     Together, Zach and I have reached millions
@@ -58,6 +68,14 @@ const About = () => {
                                     and have partnered with many amazing autism
                                     foundations, including the Doug Flutie Jr.
                                     Foundation, Integrate For Good, and more!
+                                </Typography>
+                                <Typography>
+                                    <em>I am a Superhero Expert</em> celebrates
+                                    the unique perspective of an autistic
+                                    individual. I have spent my life learning
+                                    and growing alongside Zach. He has taught me
+                                    more about life than any book, teacher, or
+                                    life experience ever could.
                                 </Typography>
                                 <Typography>Zach is my superhero.</Typography>
                                 <Typography>

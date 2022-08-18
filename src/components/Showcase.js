@@ -45,6 +45,12 @@ const Showcase = () => {
                             src={brothersImage}
                             alt="Josh and his brother smiling"
                         />
+                        <Typography
+                            variant="subtitle2"
+                            sx={{ textAlign: "end" }}
+                        >
+                            Josh and his brother, Zach
+                        </Typography>
                     </Grid>
                 </Grid>
             </Container>

@@ -17,7 +17,7 @@ const Hero = () => {
                 <Grid container spacing={4}>
                     <Grid item xs={12} md={6}>
                         <Typography variant="h1">
-                            Josh Stehle: Author, Advocate, and Leader
+                            Josh Stehle: Autism Author, Advocate, and Leader
                         </Typography>
                         <br />
                         <Typography>Some information on autism here</Typography>
