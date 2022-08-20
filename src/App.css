@@ -8,6 +8,23 @@
     --colors: #285aff;
 }
 
+@font-face {
+    font-family: "TitilliumWeb";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: local("TitilliumWeb"), local("TitilliumWeb-SemiBold"),
+        url("/public/fonts/TitilliumWeb-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "CormorantGaramond";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: local("CormorantGaramond"), local("CormorantGaramond"),
+        url("/public/fonts/CormorantGaramond-Regular.ttf") format("truetype");
+}
+
 a {
     text-decoration: none;
 }

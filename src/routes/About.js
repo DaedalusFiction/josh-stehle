@@ -22,7 +22,10 @@ const About = () => {
                                     width: "100%",
                                 }}
                             >
-                                <img src={brothersImage} alt="" />
+                                <img
+                                    src={brothersImage}
+                                    alt="Josh and Zach Stehle"
+                                />
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={6}>

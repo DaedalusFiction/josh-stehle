@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material";
-import TitilliumWeb from "../assets/fonts/TitilliumWeb-SemiBold.ttf";
-import CormorantGaramond from "../assets/fonts/CormorantGaramond-SemiBold.ttf";
+// import TitilliumWeb from "../assets/fonts/TitilliumWeb-SemiBold.ttf";
+// import CormorantGaramond from "../assets/fonts/CormorantGaramond-SemiBold.ttf";
 
 let primary = createTheme({
     palette: {
@@ -33,27 +33,27 @@ let primary = createTheme({
             main: "CormorantGaramond",
         },
     },
-    components: {
-        MuiCssBaseline: {
-            styleOverrides: `
+    // components: {
+    //     MuiCssBaseline: {
+    //         styleOverrides: `
 
-        @font-face {
-          font-family: 'TitilliumWeb';
-          font-style: normal;
-          font-display: swap;
-          font-weight: 600;
-          src: local('TitilliumWeb'), local('TitilliumWeb-regular'), url(${TitilliumWeb}) format('truetype');
-        }
-        @font-face {
-          font-family: 'CormorantGaramond';
-          font-style: normal;
-          font-display: swap;
-          font-weight: 600;
-          src: local('CormorantGaramond'), local('CormorantGaramond'), url(${CormorantGaramond}) format('truetype');
-        }
-      `,
-        },
-    },
+    //     @font-face {
+    //       font-family: 'TitilliumWeb';
+    //       font-style: normal;
+    //       font-display: swap;
+    //       font-weight: 600;
+    //       src: local('TitilliumWeb'), local('TitilliumWeb-regular'), url(${TitilliumWeb}) format('truetype');
+    //     }
+    //     @font-face {
+    //       font-family: 'CormorantGaramond';
+    //       font-style: normal;
+    //       font-display: swap;
+    //       font-weight: 600;
+    //       src: local('CormorantGaramond'), local('CormorantGaramond'), url(${CormorantGaramond}) format('truetype');
+    //     }
+    //   `,
+    //     },
+    // },
 });
 
 primary = createTheme(primary, {

@@ -1,32 +1,27 @@
-import { Box, Icon, IconButton, Tooltip, Typography } from "@mui/material";
+import { Box, IconButton, Tooltip, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import { IconContext } from "react-icons";
 import { SiTiktok } from "react-icons/si";
 import { SiFacebook } from "react-icons/si";
 import { SiInstagram } from "react-icons/si";
-import React from "react";
 import { primary } from "../themes/primary";
 
-const links = [
-    {
-        name: "Facebook",
-        href: "https://facebook.com/thestehle.bros",
-        icon: <SiFacebook />,
-    },
-
-    {
-        name: "TikTok",
-        href: "https://tiktok.com/@thestehle.bros",
-        icon: <SiTiktok />,
-    },
-    {
-        name: "Instagram",
-        href: "https://instagram.com/joshstehle",
-        icon: <SiInstagram />,
-    },
-];
-
 const MediaLinks = () => {
+    const links = [
+        {
+            name: "Facebook",
+            href: "https://facebook.com/thestehle.bros",
+        },
+
+        {
+            name: "TikTok",
+            href: "https://tiktok.com/@thestehle.bros",
+        },
+        {
+            name: "Instagram",
+            href: "https://instagram.com/joshstehle",
+        },
+    ];
     return (
         <Box
             sx={{
@@ -63,7 +58,7 @@ const MediaLinks = () => {
                                 size: "3.25em",
                             }}
                         >
-                            {links.map((link) => {
+                            {links.map((link, index) => {
                                 return (
                                     <Box
                                         key={link.name}
@@ -82,7 +77,9 @@ const MediaLinks = () => {
                                     >
                                         <Tooltip title={link.name} followCursor>
                                             <IconButton href={link.href}>
-                                                {link.icon}
+                                                {index === 0 && <SiFacebook />}
+                                                {index === 1 && <SiTiktok />}
+                                                {index === 2 && <SiInstagram />}
                                             </IconButton>
                                         </Tooltip>
                                     </Box>
