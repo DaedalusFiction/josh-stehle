@@ -25,10 +25,10 @@ const EmailForm = () => {
 
         emailjs
             .send(
-                "service_tmo76bn",
-                "template_pfang7n",
+                "service_oetbe6l",
+                "template_09tki55",
                 templateParams,
-                "aMDOy4kUud9rd0Yg9"
+                "YjaBo5usElu0OmOii"
             )
             .then(function () {
                 setEmailSent(true);
@@ -65,7 +65,7 @@ const EmailForm = () => {
                             backgroundColor: "white",
                             padding: "2rem",
                             borderRadius: "10px",
-                            border: "2px solid black",
+                            boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
                         }}
                     >
                         <Typography className="text-center">

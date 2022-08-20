@@ -2,7 +2,7 @@ import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import heroImage from "../assets/images/heroImage2.png";
-import bookCover from "../assets/images/bookCover.PNG";
+import bookCoverVertical from "../assets/images/bookCoverVertical.jpeg";
 
 const Hero = () => {
     return (
@@ -14,25 +14,45 @@ const Hero = () => {
             }}
         >
             <Container>
-                <Grid container spacing={4}>
-                    <Grid item xs={12} md={6}>
-                        <Typography variant="h1">
-                            Josh Stehle: Autism Author, Advocate, and Leader
-                        </Typography>
-                        <br />
-                        <Typography>Some information on autism here</Typography>
-                        <br />
-                        <Button
-                            color="secondary"
-                            size="large"
-                            variant="contained"
+                <Grid container spacing={6}>
+                    <Grid item xs={12} md={8}>
+                        <Box
+                            className="flex-center"
+                            sx={{
+                                height: "100%",
+                                width: "100%",
+                                flexDirection: "column",
+                                alignItems: { xs: "center", md: "start" },
+                            }}
                         >
-                            Preorder now!
-                        </Button>
+                            <Typography
+                                variant="h1"
+                                sx={{ textAlign: { xs: "center", md: "left" } }}
+                            >
+                                Josh Stehle: Autism Author, Advocate, and Leader
+                            </Typography>
+                            <br />
+                            <Typography>
+                                Preorder <em>I am a Superhero Expert</em> today!
+                            </Typography>
+                            <br />
+                            <Button
+                                color="secondary"
+                                size="large"
+                                variant="contained"
+                                href="https://books2read.com/SuperheroExpert"
+                            >
+                                Preorder
+                            </Button>
+                        </Box>
                     </Grid>
-                    <Grid item xs={12} md={6}>
-                        <Box>
-                            <img src={bookCover} alt="Book Cover" />
+                    <Grid item xs={12} md={4}>
+                        <Box
+                            sx={{
+                                boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
+                            }}
+                        >
+                            <img src={bookCoverVertical} alt="Book Cover" />
                         </Box>
                     </Grid>
                 </Grid>

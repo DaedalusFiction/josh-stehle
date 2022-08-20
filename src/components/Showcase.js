@@ -1,15 +1,25 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
-import brothersImage from "../assets/images/brothersImage.png";
+import josh from "../assets/images/josh.jpeg";
 import { Link } from "react-router-dom";
 import { navigateToTop } from "../utils/utils";
 
 const Showcase = () => {
     return (
         <Box sx={{ padding: "8rem 0" }}>
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <Grid container spacing={6}>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={5}>
+                        <img src={josh} alt="Josh Stehle" />
+                        <Typography
+                            variant="subtitle2"
+                            sx={{ textAlign: "end" }}
+                        >
+                            Josh Stehle
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12} md={2}></Grid>
+                    <Grid item xs={12} md={5}>
                         <Box
                             sx={{
                                 display: "flex",
@@ -19,14 +29,15 @@ const Showcase = () => {
                             }}
                         >
                             <Typography variant="h3">
-                                Together they are Strong
+                                A New Perspective
                             </Typography>
                             <br />
                             <Typography sx={{ maxWidth: "45ch" }}>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Enim est ipsum iusto non
-                                impedit architecto reiciendis tempora ipsam
-                                obcaecati iure?
+                                Josh's social media campaign to further autism
+                                awareness has gathered over twenty million
+                                views. His first book,{" "}
+                                <em>I am a Superhero Expert,</em> describes his
+                                and his brother Zach's extroardinary journey.
                             </Typography>
                             <br />
                             <Link to="/about" onClick={navigateToTop}>
@@ -39,18 +50,6 @@ const Showcase = () => {
                                 </Button>
                             </Link>
                         </Box>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <img
-                            src={brothersImage}
-                            alt="Josh and his brother smiling"
-                        />
-                        <Typography
-                            variant="subtitle2"
-                            sx={{ textAlign: "end" }}
-                        >
-                            Josh and his brother, Zach
-                        </Typography>
                     </Grid>
                 </Grid>
             </Container>
