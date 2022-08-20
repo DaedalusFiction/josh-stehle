@@ -52,13 +52,20 @@ const Hero = () => {
                                 boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
                             }}
                         >
-                            <img src={bookCoverVertical} alt="Book Cover" />
+                            <img
+                                height="900"
+                                width="600"
+                                src={bookCoverVertical}
+                                alt="Book Cover"
+                            />
                         </Box>
                     </Grid>
                 </Grid>
             </Container>
             <Box sx={{ marginTop: "8rem" }}>
                 <img
+                    height="210"
+                    width="1200"
                     src={heroImage}
                     alt="skyline"
                     style={{ transform: "scale(1.001)" }}

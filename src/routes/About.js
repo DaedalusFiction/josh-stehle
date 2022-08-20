@@ -23,6 +23,8 @@ const About = () => {
                                 }}
                             >
                                 <img
+                                    height="533"
+                                    width="800"
                                     src={brothersImage}
                                     alt="Josh and Zach Stehle"
                                 />

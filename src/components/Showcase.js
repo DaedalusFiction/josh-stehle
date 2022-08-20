@@ -10,7 +10,12 @@ const Showcase = () => {
             <Container maxWidth="lg">
                 <Grid container spacing={6}>
                     <Grid item xs={12} md={5}>
-                        <img src={josh} alt="Josh Stehle" />
+                        <img
+                            height="1200"
+                            width="800"
+                            src={josh}
+                            alt="Josh Stehle"
+                        />
                         <Typography
                             variant="subtitle2"
                             sx={{ textAlign: "end" }}
