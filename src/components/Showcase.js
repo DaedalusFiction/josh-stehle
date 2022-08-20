@@ -50,6 +50,7 @@ const Showcase = () => {
                                     size="large"
                                     variant="contained"
                                     color="secondary"
+                                    tabIndex={-1}
                                 >
                                     Learn More!
                                 </Button>

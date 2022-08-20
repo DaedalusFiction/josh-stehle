@@ -59,6 +59,7 @@ const Header = () => {
                             >
                                 <Typography
                                     variant="h5"
+                                    component="p"
                                     sx={{ fontSize: "2.5rem" }}
                                 >
                                     JS
@@ -128,6 +129,7 @@ const Header = () => {
                         >
                             <Typography
                                 variant="h3"
+                                component="p"
                                 noWrap
                                 sx={{
                                     mr: 2,
@@ -160,6 +162,7 @@ const Header = () => {
                                 >
                                     <Typography
                                         variant="h6"
+                                        component="p"
                                         //separate styling because can't get NavLink working with hover
                                         sx={{
                                             textTransform: "uppercase",
