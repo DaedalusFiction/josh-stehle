@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import { Link } from "react-router-dom";
-import brothersImage from "../assets/images/brothersImage.jpeg";
+import brothersImage from "../assets/images/brothersImage.webp";
 import { navigateToTop } from "../utils/utils";
 
 const About = () => {

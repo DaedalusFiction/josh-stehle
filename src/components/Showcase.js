@@ -1,6 +1,6 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
-import josh from "../assets/images/josh.jpeg";
+import josh from "../assets/images/josh.webp";
 import { Link } from "react-router-dom";
 import { navigateToTop } from "../utils/utils";
 

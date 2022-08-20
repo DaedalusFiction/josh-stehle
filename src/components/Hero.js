@@ -1,8 +1,8 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
-import heroImage from "../assets/images/heroImage2.png";
-import bookCoverVertical from "../assets/images/bookCoverVertical.jpeg";
+import heroImage from "../assets/images/heroImage2.webp";
+import bookCoverVertical from "../assets/images/bookCoverVertical.webp";
 
 const Hero = () => {
     return (
