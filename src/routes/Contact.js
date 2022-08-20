@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import ContactSection from "../components/ContactSection";
 import { primary } from "../themes/primary";
 
