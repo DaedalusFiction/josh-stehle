@@ -63,6 +63,12 @@ const Hero = () => {
                                 alt="Book Cover"
                             />
                         </Box>
+                        <Typography
+                            variant="subtitle2"
+                            sx={{ textAlign: "end" }}
+                        >
+                            Josh Stehle
+                        </Typography>
                     </Grid>
                 </Grid>
             </Container>

@@ -20,7 +20,7 @@ const Showcase = () => {
                             variant="subtitle2"
                             sx={{ textAlign: "end" }}
                         >
-                            Josh Stehle
+                            Book Cover
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={2}></Grid>
