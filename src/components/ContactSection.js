@@ -23,12 +23,22 @@ const EmailForm = () => {
             email: email,
         };
 
+        // emailjs
+        //     .send(
+        //         "service_oetbe6l",
+        //         "template_09tki55",
+        //         templateParams,
+        //         "YjaBo5usElu0OmOii"
+        //     )
+        //     .then(function () {
+        //         setEmailSent(true);
+        //     });
         emailjs
             .send(
-                "service_oetbe6l",
-                "template_09tki55",
+                "service_tmo76bn",
+                "template_ggro2co",
                 templateParams,
-                "YjaBo5usElu0OmOii"
+                "aMDOy4kUud9rd0Yg9"
             )
             .then(function () {
                 setEmailSent(true);
@@ -48,7 +58,7 @@ const EmailForm = () => {
                         component="h5"
                         className="text-center"
                     >
-                        Assemble!
+                        Contact Josh today!
                     </Typography>
                     <br />
                 </Box>

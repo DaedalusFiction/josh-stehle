@@ -1,6 +1,6 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
-import josh from "../assets/images/josh.webp";
+import bookCoverVertical from "../assets/images/bookCoverVertical.webp";
 import { Link } from "react-router-dom";
 import { navigateToTop } from "../utils/utils";
 
@@ -13,8 +13,8 @@ const Showcase = () => {
                         <img
                             height="1200"
                             width="800"
-                            src={josh}
-                            alt="Josh Stehle"
+                            src={bookCoverVertical}
+                            alt="book cover of man ripping off clothes to reveal superhero outfit"
                         />
                         <Typography
                             variant="subtitle2"
@@ -45,16 +45,15 @@ const Showcase = () => {
                                 and his brother Zach's extroardinary journey.
                             </Typography>
                             <br />
-                            <Link to="/about" onClick={navigateToTop}>
-                                <Button
-                                    size="large"
-                                    variant="contained"
-                                    color="secondary"
-                                    tabIndex={-1}
-                                >
-                                    Learn More!
-                                </Button>
-                            </Link>
+                            <Button
+                                color="secondary"
+                                size="large"
+                                variant="contained"
+                                href="https://books2read.com/SuperheroExpert"
+                                sx={{ width: "fit-content" }}
+                            >
+                                Preorder Today!
+                            </Button>
                         </Box>
                     </Grid>
                 </Grid>

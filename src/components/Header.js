@@ -12,6 +12,7 @@ import { Link, NavLink } from "react-router-dom";
 import { primary } from "../themes/primary";
 import { useState } from "react";
 import { navigateToTop } from "../utils/utils";
+import logo from "../assets/images/favicon.png";
 
 const pages = ["about", "contact"];
 const activeStyle = {
@@ -57,13 +58,18 @@ const Header = () => {
                                     mr: 1,
                                 }}
                             >
-                                <Typography
+                                <img
+                                    src={logo}
+                                    alt="man flying with cape"
+                                    style={{ maxWidth: "4rem" }}
+                                />
+                                {/* <Typography
                                     variant="h5"
                                     component="p"
                                     sx={{ fontSize: "2.5rem" }}
                                 >
                                     JS
-                                </Typography>
+                                </Typography> */}
                             </Box>
                         </Link>
                         <Box

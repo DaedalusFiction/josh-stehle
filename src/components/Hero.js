@@ -1,8 +1,10 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
+import { Link } from "react-router-dom";
 import heroImage from "../assets/images/heroImage2.webp";
-import bookCoverVertical from "../assets/images/bookCoverVertical.webp";
+import josh from "../assets/images/josh.webp";
+import { navigateToTop } from "../utils/utils";
 
 const Hero = () => {
     return (
@@ -31,19 +33,21 @@ const Hero = () => {
                             >
                                 Josh Stehle: Autism Author, Advocate, and Leader
                             </Typography>
-                            <br />
+                            {/* <br />
                             <Typography>
                                 Preorder <em>I am a Superhero Expert</em> today!
-                            </Typography>
+                            </Typography> */}
                             <br />
-                            <Button
-                                color="secondary"
-                                size="large"
-                                variant="contained"
-                                href="https://books2read.com/SuperheroExpert"
-                            >
-                                Preorder
-                            </Button>
+                            <Link to="/about" onClick={navigateToTop}>
+                                <Button
+                                    size="large"
+                                    variant="contained"
+                                    color="secondary"
+                                    tabIndex={-1}
+                                >
+                                    Learn More!
+                                </Button>
+                            </Link>
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={4}>
@@ -55,7 +59,7 @@ const Hero = () => {
                             <img
                                 height="900"
                                 width="600"
-                                src={bookCoverVertical}
+                                src={josh}
                                 alt="Book Cover"
                             />
                         </Box>
