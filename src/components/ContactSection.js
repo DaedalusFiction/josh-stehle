@@ -39,88 +39,79 @@ const EmailForm = () => {
         <Box
             className="section"
             id="contact"
-            sx={{ backgroundColor: primary.palette.primary.main }}
+            // sx={{ backgroundColor: primary.palette.primary.main }}
         >
-            <Container>
-                <Box
-                    className="flex-center"
-                    sx={{ gap: "4em", flexWrap: "wrap" }}
-                >
-                    <Box>
-                        <Typography
-                            variant="h1"
-                            component="h5"
-                            className="text-center"
-                        >
-                            Assemble!
-                        </Typography>
-                        <br />
-                    </Box>
-                    <Box
-                        sx={{
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "1rem",
-                            maxWidth: "30rem",
-                            backgroundColor: "white",
-                            padding: "2rem",
-                            borderRadius: "10px",
-                            boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
-                        }}
+            <Box className="flex-center" sx={{ gap: "4em", flexWrap: "wrap" }}>
+                <Box>
+                    <Typography
+                        variant="h1"
+                        component="h5"
+                        className="text-center"
                     >
-                        <Typography className="text-center">
-                            Join our newsletter to get all the latest issues
-                            straight to your inbox!
-                        </Typography>
-                        <Box
-                            component="form"
-                            noValidate
-                            autoComplete="off"
-                            className="flex-center"
-                            sx={{ flexDirection: "column", gap: "1em" }}
-                        >
-                            {!emailSent && (
-                                <TextField
-                                    color="secondary"
-                                    id="outlined-basic"
-                                    label="Email Address"
-                                    variant="outlined"
-                                    sx={{
-                                        width: "20rem",
-                                        input: {
-                                            color: primary.palette.custom.dark,
-                                        },
-                                    }}
-                                    value={email}
-                                    onChange={handleEmailChange}
-                                    focused
-                                    error={emailError}
-                                />
-                            )}
-                            {!emailSent && (
-                                <Button
-                                    size="large"
-                                    variant="contained"
-                                    color="secondary"
-                                    onClick={sendEmail}
-                                    endIcon={<ArrowRightAltIcon />}
-                                    sx={{ width: "fit-content" }}
-                                >
-                                    Send
-                                </Button>
-                            )}
-                        </Box>
-                        {emailSent && (
-                            <Typography
-                                variant="p"
-                                sx={{ textAlign: "center" }}
+                        Assemble!
+                    </Typography>
+                    <br />
+                </Box>
+                <Box
+                    sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "1rem",
+                        maxWidth: "30rem",
+                        backgroundColor: "white",
+                        padding: "2rem",
+                        borderRadius: "10px",
+                        boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
+                    }}
+                >
+                    <Typography className="text-center">
+                        Join our newsletter to get all the latest issues
+                        straight to your inbox!
+                    </Typography>
+                    <Box
+                        component="form"
+                        noValidate
+                        autoComplete="off"
+                        className="flex-center"
+                        sx={{ flexDirection: "column", gap: "1em" }}
+                    >
+                        {!emailSent && (
+                            <TextField
+                                color="secondary"
+                                id="outlined-basic"
+                                label="Email Address"
+                                variant="outlined"
+                                sx={{
+                                    input: {
+                                        color: primary.palette.custom.dark,
+                                    },
+                                }}
+                                value={email}
+                                onChange={handleEmailChange}
+                                focused
+                                error={emailError}
+                            />
+                        )}
+                        {!emailSent && (
+                            <Button
+                                size="large"
+                                variant="contained"
+                                color="secondary"
+                                onClick={sendEmail}
+                                endIcon={<ArrowRightAltIcon />}
+                                sx={{ width: "fit-content" }}
                             >
-                                Thanks for signing up!
-                            </Typography>
+                                Send
+                            </Button>
                         )}
                     </Box>
+                    {emailSent && (
+                        <Typography variant="p" sx={{ textAlign: "center" }}>
+                            Thanks for signing up!
+                        </Typography>
+                    )}
                 </Box>
-            </Container>
+            </Box>
         </Box>
     );
 };

@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import ContactSection from "../components/ContactSection";
 import { primary } from "../themes/primary";
 
@@ -10,7 +10,9 @@ const Contact = () => {
                 padding: "8rem 0",
             }}
         >
-            <ContactSection />
+            <Container>
+                <ContactSection />
+            </Container>
         </Box>
     );
 };

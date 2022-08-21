@@ -33,21 +33,20 @@ const Footer = () => {
                             </Typography>
                             {socialMedia.map((item) => {
                                 return (
-                                    <Link key={item.media} to={item.url}>
-                                        <Typography
-                                            sx={{
-                                                width: "fit-content",
-                                                color: primary.palette.custom
-                                                    .lightMuted,
-                                                cursor: "pointer",
-                                                "&:hover": {
-                                                    textDecoration: "underline",
-                                                },
-                                            }}
-                                        >
-                                            {item.media}
-                                        </Typography>
-                                    </Link>
+                                    <Typography
+                                        key={item.media}
+                                        sx={{
+                                            width: "fit-content",
+                                            color: primary.palette.custom
+                                                .lightMuted,
+                                            cursor: "pointer",
+                                            "&:hover": {
+                                                textDecoration: "underline",
+                                            },
+                                        }}
+                                    >
+                                        <a href={item.url}>{item.media}</a>
+                                    </Typography>
                                 );
                             })}
                         </Box>
