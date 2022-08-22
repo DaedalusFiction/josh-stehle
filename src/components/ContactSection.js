@@ -25,14 +25,20 @@ const EmailForm = () => {
 
         emailjs
             .send(
-                "service_oetbe6l",
-                "template_09tki55",
+                "service_taboqxa",
+                "template_vjue97r",
                 templateParams,
-                "YjaBo5usElu0OmOii"
+                "evZwfL6dFgWqReTEz"
             )
-            .then(function () {
-                setEmailSent(true);
-            });
+            .then(
+                function () {
+                    setEmailSent(true);
+                },
+                function () {
+                    setEmailError(true);
+                }
+            );
+
         // emailjs
         //     .send(
         //         "service_tmo76bn",
@@ -85,7 +91,7 @@ const EmailForm = () => {
                         className="flex-center"
                         sx={{ flexDirection: "column", gap: "1em" }}
                     >
-                        {!emailSent && (
+                        {!emailSent && !emailError && (
                             <TextField
                                 color="secondary"
                                 id="outlined-basic"
@@ -102,7 +108,7 @@ const EmailForm = () => {
                                 error={emailError}
                             />
                         )}
-                        {!emailSent && (
+                        {!emailSent && !emailError && (
                             <Button
                                 size="large"
                                 variant="contained"
@@ -118,6 +124,13 @@ const EmailForm = () => {
                     {emailSent && (
                         <Typography variant="p" sx={{ textAlign: "center" }}>
                             Thanks for signing up!
+                        </Typography>
+                    )}
+                    {emailError && (
+                        <Typography variant="p" sx={{ textAlign: "center" }}>
+                            Something went wrong! Please contact
+                            joshstehle13@gmail.com if you continue to get this
+                            error.
                         </Typography>
                     )}
                 </Box>
