@@ -13,7 +13,6 @@ const EmailForm = () => {
     const [emailError, setEmailError] = useState(false);
 
     const handleEmailChange = (e) => {
-        setEmailError(!validateEmail(e.target.value));
         setEmail(e.target.value);
     };
 
@@ -105,7 +104,6 @@ const EmailForm = () => {
                                 value={email}
                                 onChange={handleEmailChange}
                                 focused
-                                error={emailError}
                             />
                         )}
                         {!emailSent && !emailError && (
