@@ -1,8 +1,6 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import bookCoverVertical from "../assets/images/bookCoverVertical.webp";
-import { Link } from "react-router-dom";
-import { navigateToTop } from "../utils/utils";
 
 const Showcase = () => {
     return (

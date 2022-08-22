@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import emailjs from "@emailjs/browser";
-import { Box, Button, Container, TextField, Typography } from "@mui/material";
+import { Box, Button, TextField, Typography } from "@mui/material";
 
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { primary } from "../themes/primary";
@@ -23,26 +23,26 @@ const EmailForm = () => {
             email: email,
         };
 
-        // emailjs
-        //     .send(
-        //         "service_oetbe6l",
-        //         "template_09tki55",
-        //         templateParams,
-        //         "YjaBo5usElu0OmOii"
-        //     )
-        //     .then(function () {
-        //         setEmailSent(true);
-        //     });
         emailjs
             .send(
-                "service_tmo76bn",
-                "template_ggro2co",
+                "service_oetbe6l",
+                "template_09tki55",
                 templateParams,
-                "aMDOy4kUud9rd0Yg9"
+                "YjaBo5usElu0OmOii"
             )
             .then(function () {
                 setEmailSent(true);
             });
+        // emailjs
+        //     .send(
+        //         "service_tmo76bn",
+        //         "template_ggro2co",
+        //         templateParams,
+        //         "aMDOy4kUud9rd0Yg9"
+        //     )
+        //     .then(function () {
+        //         setEmailSent(true);
+        //     });
     };
 
     return (

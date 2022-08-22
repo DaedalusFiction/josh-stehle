@@ -1,6 +1,5 @@
 import { Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
-import { Link } from "react-router-dom";
 import React from "react";
 import { primary } from "../themes/primary";
 
@@ -10,7 +9,7 @@ const socialMedia = [
     { media: "Facebook", url: "https://facebook.com/thestehle.bros" },
 ];
 
-const contactInfo = [{ type: "email", value: "hello@email.com" }];
+const contactInfo = [{ type: "email", value: "joshstehle13@gmail.com" }];
 
 const Footer = () => {
     return (
