@@ -40,7 +40,7 @@ const Showcase = () => {
                                 awareness has gathered over twenty million
                                 views. His first book,{" "}
                                 <em>I am a Superhero Expert,</em> describes his
-                                and his brother Zach's extroardinary journey.
+                                and his brother Zach's extraordinary journey.
                             </Typography>
                             <br />
                             <Button
